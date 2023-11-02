@@ -1,0 +1,74 @@
+body {
+  font-family: "Alata", sans-serif;
+}
+#about_home {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.mgt {
+  margin-top: 0 !important;
+}
+.col_1 {
+  color: #f47629;
+}
+.about_home_2 {
+  margin-top: 30px;
+}
+.about_home_2r {
+    margin-top: 10px;
+  }
+.about_home_2r ul li {
+  margin-top: 10px;
+}
+.about_home_2r ul li i {
+   
+  margin-right: 10px;
+  font-size: 14px;
+}
+a {
+  color: #333;
+}
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 12px;
+}
+li {
+  font-size: 16px;
+}
+.button {
+  background: #f47629;
+  display: inline-block;
+  color: #fff;
+  padding: 15px 20px 15px 20px !important;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.button i {
+  margin-right: 5px;
+}
+.button:hover {
+  background: #fff;
+  color: #f47629;
+}
+.iw {
+  width: 100%;
+}
+.form-group label{
+  margin: 4px;
+  font-size: larger;
+  font-weight: 500;
+  /* color: #f47629; */
+}
+.form-group input{
+  margin: 6px;
+}
+.form-group textarea{
+  margin: 6px;
+}

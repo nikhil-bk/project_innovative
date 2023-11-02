@@ -1,0 +1,27 @@
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    width: 15px !important;
+    height: 15px !important;
+}
+.carousel-caption{
+  top: 40%;
+  left: 10%;
+}
+@media (max-width: 576px) {
+  .mobile-device {
+    height: 80vh; /* Set desired height for extra small devices */
+  }
+  .laptop-device {
+    display: none; /* Set desired height for extra small devices */
+  }
+}
+
+@media (min-width: 576px) {
+  .mobile-device {
+    display: none; /* Set desired height for extra small devices */
+  }
+  .laptop-device {
+    height: 90vh; /* Set desired height for extra small devices */
+  }
+}
+

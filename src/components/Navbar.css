@@ -1,0 +1,14 @@
+.link-item {
+  width: fit-content;
+  color:gray;
+  transition: border-bottom 0.3s; /* Add a transition for a smooth effect */
+}
+.link-item:hover {
+  width: fit-content;
+  border-bottom: 2px solid #d62c04 !important;
+}
+.active-link {
+    width: fit-content;
+    color:black;
+    border-bottom: 2px solid #d62c04 !important;
+  }
