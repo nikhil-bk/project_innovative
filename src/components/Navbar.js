@@ -12,6 +12,7 @@ import "./Navbar.css"
 const NavbarComponent = () => {
 
     const [pathname, setPathname] = useState(window.location.pathname)
+    const [showOffcanvas, setShowOffcanvas] = useState(false);
     let Links = [
         { name: "HOME", link: "/" },
         { name: "SERVICES", link: "/services" },
@@ -20,7 +21,11 @@ const NavbarComponent = () => {
         { name: "ABOUT US", link: "/about-us" },
         { name: "CONTACT", link: "/contact-us" }
     ]
-
+    const handleLinkClick = (link) => {
+        setPathname(link);
+        setShowOffcanvas(false);
+        window.scrollTo(0, 0) // Close offcanvas when a link is clicked
+    };
     return (
         <>
 
@@ -34,8 +39,9 @@ const NavbarComponent = () => {
                             className="d-inline-block align-top"
                             alt="React Bootstrap logo"
                         /></Navbar.Brand>
-                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
+                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} onClick={() => setShowOffcanvas(!showOffcanvas)} />
                     <Navbar.Offcanvas
+                        show={showOffcanvas} onHide={() => setShowOffcanvas(false)}
                         id={`offcanvasNavbar-expand-lg`}
                         aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
                         placement="start"
@@ -54,25 +60,11 @@ const NavbarComponent = () => {
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 {Links.map((each, idx) => (
-                                    <Link to={each.link} onClick={()=>setPathname(each.link)} className={`link-item ${pathname === each.link ? 'active-link' : ''} mx-2 fs-5 fw-bold `} style={{textDecoration:"None"}} >{each.name}
+                                    <Link to={each.link} onClick={() => handleLinkClick(each.link)} className={`link-item ${pathname === each.link ? 'active-link' : ''} mx-2 fs-5 fw-bold `} style={{ textDecoration: "None" }} >{each.name}
 
                                     </Link>
                                 ))}
-                                {/* <Nav.Link href="#action1">Home</Nav.Link>
-                      <Nav.Link href="#action2">Link</Nav.Link> */}
-                                {/* <NavDropdown
-                        title="Dropdown"
-                        id={`offcanvasNavbarDropdown-expand-lg`}
-                      >
-                        <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action4">
-                          Another action
-                        </NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action5">
-                          Something else here
-                        </NavDropdown.Item>
-                      </NavDropdown> */}
+
                             </Nav>
 
                         </Offcanvas.Body>

@@ -7,6 +7,9 @@
   top: 40%;
   left: 10%;
 }
+.carousel-item {
+  transition-duration: 1.5s, 1.5s;
+}
 @media (max-width: 576px) {
   .mobile-device {
     height: 80vh; /* Set desired height for extra small devices */
