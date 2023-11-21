@@ -6,6 +6,18 @@ import CEIGApprovals from "../images/services/ceig_approval.jpg"
 import LTPanel from "../images/services/LTPanel.jpg"
 import LTPanel2 from "../images/services/LTPanel2.jpg"
 import MCB from "../images/services/mcb.jpg"
+import PS_Slide5 from "../images/services/power_sacntions/5.png"
+import PS_Slide6 from "../images/services/power_sacntions/6.jpg"
+import PS_Slide8 from "../images/services/power_sacntions/8.jpg"
+import PS_Slide9 from "../images/services/power_sacntions/9.jpg"
+import PS_Slide10 from "../images/services/power_sacntions/10.jpg"
+import Panel_Image_Slide1 from "../images/services/panel_images/1.jpg"
+import Panel_Image_Slide2 from "../images/services/panel_images/2.jpg"
+import Panel_Image_Slide3 from "../images/services/panel_images/3.jpg"
+import Electrical_Service_Slide1 from "../images/services/electrical_services/1.jpg"
+import Electrical_Service_Slide2 from "../images/services/electrical_services/2.jpg"
+import Electrical_Service_Slide3 from "../images/services/electrical_services/3.jpg"
+import Carousel2 from '../components/Carousel2'
 
 const Services = () => {
     return (
@@ -56,7 +68,8 @@ const Services = () => {
                 <div className='row mx-5 py-4 clearfix'>
                     <div className='col-sm-6 '>
                         <div className="card p-2" >
-                            <img src={PowerSanction} className="card-img-top" alt="power_sanction" style={{ width: "100%", height: "60vh" }} />
+                        <Carousel2 slides={[PS_Slide5,PS_Slide6,PS_Slide8,PS_Slide9,PS_Slide10]}/>
+                            {/* <img src={PowerSanction} className="card-img-top" alt="power_sanction" style={{ width: "100%", height: "60vh" }} /> */}
 
                         </div>
                     </div>
@@ -115,7 +128,8 @@ const Services = () => {
                 <div className='row mx-5 py-4 clearfix'>
                     <div className='col-sm-6 '>
                         <div className="card p-2" >
-                            <img src={LTPanel2} className="card-img-top" alt="power_sanction" style={{ width: "100%", height: "60vh", backgroundColor: "#d3d3d3" }} />
+                        <Carousel2 slides={[LTPanel2,Panel_Image_Slide1,Panel_Image_Slide2,Panel_Image_Slide3]}/>
+                            {/* <img src={LTPanel2} className="card-img-top" alt="power_sanction" style={{ width: "100%", height: "60vh", backgroundColor: "#d3d3d3" }} /> */}
 
                         </div>
                     </div>
@@ -185,7 +199,8 @@ const Services = () => {
                 <div className='row mx-5 py-4 clearfix'>
                     <div className='col-sm-6 '>
                         <div className="card p-2" >
-                            <img src={LTPanel} className="card-img-top" alt="power_sanction" style={{ width: "100%", height: "60vh", backgroundColor: "#d3d3d3" }} />
+                        <Carousel2 slides={[LTPanel,Electrical_Service_Slide1,Electrical_Service_Slide2,Electrical_Service_Slide3]}/>
+                            {/* <img src={LTPanel} className="card-img-top" alt="power_sanction" style={{ width: "100%", height: "60vh", backgroundColor: "#d3d3d3" }} /> */}
 
                         </div>
                     </div>
