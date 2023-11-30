@@ -7,6 +7,8 @@ import AboutUs from './pages/AboutUs'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import Gallery from './pages/GalleryPage'
+import Login from './pages/Login'
+import Admin from './pages/Admin'
 
 
 
@@ -16,6 +18,8 @@ const App = () => {
       <NavbarComponent />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/admin" element={<Admin/>} />
         <Route exact path="/services" element={<Services />} />
         <Route exact path="/about-us" element={<AboutUs />} />
         <Route exact path="/contact-us" element={<Contact />} />

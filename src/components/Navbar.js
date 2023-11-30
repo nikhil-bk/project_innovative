@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import Logo from "../images/logo.png"
+import React, { useContext, useEffect, useState } from 'react'
+import Logo from "../images/SquadLogo.png"
 import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -7,10 +7,18 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import "./Navbar.css"
+import { DataContext } from '../context/GlobalContext';
 
 
 const NavbarComponent = () => {
-
+    const state = useContext(DataContext);
+    const [isLogin, setIsLogin] = state.isLogin;
+    const logOutSubmit = () => {
+        localStorage.clear();
+        setIsLogin(false);
+        setShowOffcanvas(false);
+        window.scrollTo(0, 0)
+    }
     const [pathname, setPathname] = useState(window.location.pathname)
     const [showOffcanvas, setShowOffcanvas] = useState(false);
     let Links = [
@@ -19,13 +27,19 @@ const NavbarComponent = () => {
         { name: "GALLERY", link: "/gallery" },
         { name: "PROJECTS", link: "/projects" },
         { name: "ABOUT US", link: "/about-us" },
-        { name: "CONTACT", link: "/contact-us" }
+        { name: "CONTACT", link: "/contact-us" },
+        { name: "ADMIN", link: "/admin" },
+        { name: "LOGIN", link: "/login" }
+
     ]
     const handleLinkClick = (link) => {
         setPathname(link);
         setShowOffcanvas(false);
         window.scrollTo(0, 0) // Close offcanvas when a link is clicked
     };
+    useEffect(() => {
+        console.log(pathname)
+    }, [pathname])
     return (
         <>
 
@@ -59,11 +73,22 @@ const NavbarComponent = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                {Links.map((each, idx) => (
-                                    <Link to={each.link} onClick={() => handleLinkClick(each.link)} className={`link-item ${pathname === each.link ? 'active-link' : ''} mx-2 fs-5 fw-bold `} style={{ textDecoration: "None" }} >{each.name}
+                                {Links.map((each, idx) => {
+                                    if (each.link === "/admin") {
+                                        return isLogin ? <Link to={each.link} onClick={() => handleLinkClick(each.link)} className={`link-item ${pathname === each.link ? 'active-link' : ''} mx-2 fs-5 fw-bold `} style={{ textDecoration: "None" }} >{each.name}
+                                        </Link> : ''
+                                    } else if (each.name === "LOGIN") {
+                                        return <Link to={isLogin ? "/" : "/login"} onClick={logOutSubmit} className={`link-item ${pathname === each.link ? 'active-link' : ''} mx-2 fs-5 fw-bold `} style={{ textDecoration: "None" }} >{isLogin ? "LOGOUT" : "LOGIN"}</Link>
+                                    }
+                                    else {
+                                        return <Link to={each.link} onClick={() => handleLinkClick(each.link)} className={`link-item ${pathname === each.link ? 'active-link' : ''} mx-2 fs-5 fw-bold `} style={{ textDecoration: "None" }} >{each.name}
+                                        </Link>
+                                    }
 
-                                    </Link>
-                                ))}
+
+                                }
+
+                                )}
 
                             </Nav>
 

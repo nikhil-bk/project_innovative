@@ -28,35 +28,35 @@ const Services = () => {
             </div>
             <div className='container mt-5'>
 
-                <p style={{ textAlign: "justify" }}>Welcome to <span className='col_1'>Innovative Electrical Solutions</span>, your one-stop destination for top-notch electrical contracting services. With a proven track record of excellence and a team of dedicated professionals, we are your reliable partner for all your electrical need.We are presenting service in Karnataka particularly inside the area of Bangalore, Tumkur, Kolar, Chitradurga.(BESCOM AND KPTCL regions)</p>
+                <p style={{ textAlign: "justify" }}>Welcome to <span className='col_1'>Innovative Electrical Squad</span>, your one-stop destination for top-notch electrical contracting services. With a proven track record of excellence and a team of dedicated professionals, we are your reliable partner for all your electrical need.We are presenting service in Karnataka particularly inside the area of Bangalore, Tumkur, Kolar, Chitradurga.(BESCOM AND KPTCL regions)</p>
                 <div className='row gap-2 justify-content-center'>
-                    <div class="card  col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
-                        <div class="card-body">
+                    <div className="card  col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
+                        <div className="card-body">
                             COMMERCIAL COMPLEXES
                         </div>
                     </div>
-                    <div class="card col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
-                        <div class="card-body">
+                    <div className="card col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
+                        <div className="card-body">
                             IT PARKS
                         </div>
                     </div>
-                    <div class="card col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
-                        <div class="card-body">
+                    <div className="card col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
+                        <div className="card-body">
                             INDUSTRIES
                         </div>
                     </div>
-                    <div class="card col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
-                        <div class="card-body">
+                    <div className="card col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
+                        <div className="card-body">
                             HOSPITALS
                         </div>
                     </div>
-                    <div class="card col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
-                        <div class="card-body">
+                    <div className="card col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
+                        <div className="card-body">
                             APPARTMENTS
                         </div>
                     </div>
-                    <div class="card col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
-                        <div class="card-body">
+                    <div className="card col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
+                        <div className="card-body">
                             NEW LAYOUTS
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const Services = () => {
                 <div className='row mx-5 py-4 clearfix'>
                     <div className='col-sm-6 '>
                         <div className="card p-2" >
-                        <Carousel2 slides={[PS_Slide5,PS_Slide6,PS_Slide8,PS_Slide9,PS_Slide10]}/>
+                            <Carousel2 slides={[PS_Slide5, PS_Slide6, PS_Slide8, PS_Slide9, PS_Slide10]} />
                             {/* <img src={PowerSanction} className="card-img-top" alt="power_sanction" style={{ width: "100%", height: "60vh" }} /> */}
 
                         </div>
@@ -128,7 +128,7 @@ const Services = () => {
                 <div className='row mx-5 py-4 clearfix'>
                     <div className='col-sm-6 '>
                         <div className="card p-2" >
-                        <Carousel2 slides={[LTPanel2,Panel_Image_Slide1,Panel_Image_Slide2,Panel_Image_Slide3]}/>
+                            <Carousel2 slides={[LTPanel2, Panel_Image_Slide1, Panel_Image_Slide2, Panel_Image_Slide3]} />
                             {/* <img src={LTPanel2} className="card-img-top" alt="power_sanction" style={{ width: "100%", height: "60vh", backgroundColor: "#d3d3d3" }} /> */}
 
                         </div>
@@ -199,7 +199,7 @@ const Services = () => {
                 <div className='row mx-5 py-4 clearfix'>
                     <div className='col-sm-6 '>
                         <div className="card p-2" >
-                        <Carousel2 slides={[LTPanel,Electrical_Service_Slide1,Electrical_Service_Slide2,Electrical_Service_Slide3]}/>
+                            <Carousel2 slides={[LTPanel, Electrical_Service_Slide1, Electrical_Service_Slide2, Electrical_Service_Slide3]} />
                             {/* <img src={LTPanel} className="card-img-top" alt="power_sanction" style={{ width: "100%", height: "60vh", backgroundColor: "#d3d3d3" }} /> */}
 
                         </div>

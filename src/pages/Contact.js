@@ -8,6 +8,7 @@ import WorkingHours from "../images/contact/working-time.png"
 import WorkingHours2 from "../images/contact/workinghours.png"
 import Gmail from "../images/contact/gmail.png"
 import axios from 'axios'
+import { SEND_EMAIL_URL } from '../config'
 
 
 const Contact = () => {
@@ -44,9 +45,8 @@ const Contact = () => {
         // event.stopPropogation()
         setLoading(true)
         console.log("submit clicked")
-        const BASE_URL="https://project-innovative-backend-git-master-nikhil-bk.vercel.app/api/ies/v1/enquiry/email"
-        const LOCAL_BASE_URL="http://localhost:5000/api/ies/v1/enquiry/email"
-        axios.post(BASE_URL, contact_details).then(res => {
+       
+        axios.post(SEND_EMAIL_URL, contact_details).then(res => {
             setLoading(false)
             set_contact_details({
                 name: "",
@@ -94,7 +94,7 @@ const Contact = () => {
                                                 Phone Number
                                             </h5>
                                             <p>
-                                                +91 9876543210
+                                            +91  9019940229
                                             </p>
 
                                         </div>
@@ -111,7 +111,7 @@ const Contact = () => {
                                                 Email
                                             </h5>
                                             <p>
-                                                abcdef@gmail.com
+                                            electric@iesteam.in
                                             </p>
 
                                         </div>
@@ -128,7 +128,7 @@ const Contact = () => {
                                                 Address
                                             </h5>
                                             <p>
-                                                Innovative Electrical Solution,2nd main,MG Road, Tumkur,Karnataka
+                                            Karibasveshwara Swamy Mata Complex, 1st Floor, Horapete, Tumkur, Karnataka, 572101
                                             </p>
 
                                         </div>
@@ -221,9 +221,9 @@ const Contact = () => {
                             <div className='m-auto' style={{ border: "2px solid orange", width: "4rem" }}></div>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i className="fa-solid fa-location-dot col_1"></i> company-1 name, 1st main,1st accross, MG road, Tumkur 572102</li>
-                            <li class="list-group-item"><i className="fa-solid fa-phone col_1"></i> 9876543210</li>
-                            <li class="list-group-item"><i className="fa-solid fa-envelope col_1"></i> abc@gmail.com</li>
+                            <li class="list-group-item"><i className="fa-solid fa-location-dot col_1"></i> Karibasveshwara Swamy Mata Complex, 1st Floor, Horapete, Tumkur, Karnataka - 572101</li>
+                            <li class="list-group-item"><i className="fa-solid fa-phone col_1"></i> +91 9019940229</li>
+                            <li class="list-group-item"><i className="fa-solid fa-envelope col_1"></i> electric@iesteam.in</li>
 
                         </ul>
 
@@ -237,9 +237,9 @@ const Contact = () => {
                             <div className='m-auto' style={{ border: "2px solid orange", width: "4rem" }}></div>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i className="fa-solid fa-location-dot col_1"></i> Company-2 name, 1st main,1st accross, MG road, Bangalore 572102</li>
-                            <li class="list-group-item"><i className="fa-solid fa-phone col_1"></i> 9876543210</li>
-                            <li class="list-group-item"><i className="fa-solid fa-envelope col_1"></i> abc@gmail.com</li>
+                            <li class="list-group-item"><i className="fa-solid fa-location-dot col_1"></i>  #698, Chowdeswari Temple Street, Varthur, Bengaluru, Karnataka - 560087</li>
+                            <li class="list-group-item"><i className="fa-solid fa-phone col_1"></i> +91 9019940229</li>
+                            <li class="list-group-item"><i className="fa-solid fa-envelope col_1"></i> electric@iesteam.in</li>
 
                         </ul>
 
@@ -253,10 +253,9 @@ const Contact = () => {
                             <div className='m-auto' style={{ border: "2px solid orange", width: "4rem" }}></div>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i className="fa-solid fa-location-dot col_1"></i> Company-3 name, 1st main,1st accross, MG road, Kolar 572102</li>
-                            <li class="list-group-item"><i className="fa-solid fa-phone col_1"></i> 9876543210</li>
-                            <li class="list-group-item"><i className="fa-solid fa-envelope col_1"></i> abc@gmail.com</li>
-
+                            <li class="list-group-item"><i className="fa-solid fa-location-dot col_1"></i> Coming Soon...<br/>Be Patient</li>
+                            <li class="list-group-item"><i className="fa-solid fa-phone col_1"></i> +91 9019940229</li>
+                            <li class="list-group-item"><i className="fa-solid fa-envelope col_1"></i> electric@iesteam.in</li>
                         </ul>
 
                     </div>
