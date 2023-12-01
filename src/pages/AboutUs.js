@@ -98,7 +98,7 @@ const AboutUs = () => {
                         <div className="card h-100 shadow-lg" style={{ width: "auto" }}>
                             <img src={Suneeth} className="card-img-top d-flex justify-content-center p-3" alt="Suneeth" style={{ height: "350px" }} />
                             <div class="card-body">
-                                <h5 className="card-title"><span className="col_1">R Suneet</span></h5>
+                                <h5 className="card-title"><span className="col_1">R Suneeth <sub style={{ fontSize: '12px' }}>M.Tech (PE), B. E (EEE)</sub></span></h5>
                                 <p className='p-0 m-0'>Class 1 Electrical Contractor and Project Designer</p>
                             </div>
                             {/* <ul class="list-group list-group-flush">
@@ -130,7 +130,8 @@ const AboutUs = () => {
                         <div className="card h-100 shadow-lg" style={{ width: "auto" }} >
                             <img src={Anudeep} className="card-img-top p-3" alt="Anudeep" style={{ height: "350px" }} />
                             <div class="card-body">
-                                <h5 className="card-title"><span className="col_1">Anudeep K P</span></h5>
+                                <h5 className="card-title"><span className="col_1">Anudeep K P  <sub style={{ fontSize: '12px' }}> B. E (EEE)
+                                </sub></span></h5>
                                 <p className='p-0 m-0'>Electrical supervisor Permit Grade 1 and Panel Board Manufacturing Head</p>
                             </div>
                             {/* <ul class="list-group list-group-flush">
