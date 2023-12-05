@@ -34,7 +34,7 @@ const AboutUs = () => {
                         <div className='col-sm-6 my-2'>
                             <div className="card h-100 " >
                                 <div className="card-body ">
-                                    <h5 className="card-title">Why We <span className='col_1'>Exists</span></h5>
+                                    <h5 className="card-title">Why We <span className='col_1'>Exist</span></h5>
 
                                     <p className="card-text" style={{ textAlign: "justify" }}>At Innovative Electrical Support, we believe in powering progress. We exist to make a difference in the electrical industry by providing innovative, sustainable, and high-quality solutions. Our passion for excellence drives us to constantly push boundaries and set new standards.</p>
 
@@ -46,7 +46,7 @@ const AboutUs = () => {
 
 
                 </div>
-                <h5 className='display-6 fw-normal text-center'>Companies under <span className='col_1'>INNOVATIVE</span></h5>
+                <h5 className='display-6 fw-normal text-center'>Companies under <span className='col_1'>IES</span> Team</h5>
                 <div className='container '>
 
                     <div className='row py-4'>

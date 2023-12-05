@@ -95,7 +95,7 @@ const Projects = () => {
         <h5 className="position-absolute top-50 start-50 translate-middle text-center display-3 text-white fw-normal">PROJECTS</h5>
       </div>
       <div className='container p-5'>
-        <h5 className='display-6 fw-normal text-center'>Projects Undertaken by<span className='col_1'> US</span></h5>
+        <h5 className='display-6 fw-normal text-center'>Projects Undertaken</h5>
 
       </div>
       <div className='mx-5 mb-5'>

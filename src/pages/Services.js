@@ -28,7 +28,7 @@ const Services = () => {
             </div>
             <div className='container mt-5'>
 
-                <p style={{ textAlign: "justify" }}>Welcome to <span className='col_1'>Innovative Electrical Support</span>, your one-stop destination for top-notch electrical contracting services. With a proven track record of excellence and a team of dedicated professionals, we are your reliable partner for all your electrical need.We are presenting service in Karnataka particularly inside the area of Bangalore, Tumkur, Kolar, Chitradurga.(BESCOM AND KPTCL regions)</p>
+                <p style={{ textAlign: "justify" }}>Welcome to <span className='col_1'>Innovative Electrical Support</span>, your one-stop destination for top-notch electrical contracting services. With a proven track record of excellence and a team of dedicated professionals, we are your reliable partner for all your electrical needs. We are currently providing our services in Karnataka, particularly in and around the location of Bangalore, Tumkur, Kolar, Chitradurga (BESCOM AND KPTCL regions)</p>
                 <div className='row gap-2 justify-content-center'>
                     <div className="card  col-sm-4 text-white fw-bold p-0 m-0" style={{ width: "fit-content", backgroundColor: "#f47629", borderColor: "#f47629" }}>
                         <div className="card-body">

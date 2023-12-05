@@ -82,7 +82,7 @@ const Contact = () => {
                     <div className='row py-4'>
 
                         <div className='col-sm-6 my-2'>
-                            <h5 className='display-6 fw-normal'>Let's make something awesome <span className='col_1'>together</span></h5>
+                            <h5 className='display-6 fw-normal'>Let's create something awesome <span className='col_1'>together</span></h5>
                             <div className='row'>
                                 <div className='col-sm-6 d-flex justify-content-center' >
                                     <div className='p-2 text-center   rounded-5 ' >
@@ -145,7 +145,7 @@ const Contact = () => {
                                                 Working Hours
                                             </h5>
                                             <p>
-                                                Mon-Sat : 9:00am - 5:00pm
+                                                Mon-Sat : 9:00 am - 5:00 pm
                                             </p>
 
                                         </div>
@@ -159,7 +159,7 @@ const Contact = () => {
                         <div className='col-sm-6 my-2'>
                             <div className="card" >
                                 <div className='card-title m-auto p-3'>
-                                    <h5><span className='col_1'>Discover, Inquire, Connect.</span> Your questions make a difference.</h5>
+                                    <h5><span className='col_1'>Discover, Enquire, Connect.</span> Your questions make a difference.</h5>
                                 </div>
                                 <div className="card-body pt-0 ">
 

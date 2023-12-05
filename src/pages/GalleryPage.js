@@ -16,7 +16,7 @@ const Gallery = () => {
                 <h5 className="position-absolute top-50 start-50 translate-middle text-center display-3 text-white fw-normal">Gallery</h5>
             </div>
             <div className='container p-5'>
-                <h5 className='display-6 fw-normal text-center'>Showcasing Our Work<span className='col_1'> Gallery</span></h5>
+                <h5 className='display-6 fw-normal text-center'>Work Showcase</h5>
 
             </div>
             <div className='row clearfix mx-5 mb-5'>
@@ -35,7 +35,7 @@ const Gallery = () => {
                 <div className='col-sm-4 mt-2 '>
 
                     <img src={LTPanelBoardManufacturing} className="rounded-3" alt="..." style={{ width: "100%", height: "208px" }} />
-                    <h5 className='mt-2'>LT Panel board manufacturing and service</h5>
+                    <h5 className='mt-2'>LT Panel Board Manufacturing and Service</h5>
                 </div>
                 <div className='col-sm-4 mt-2 '>
 

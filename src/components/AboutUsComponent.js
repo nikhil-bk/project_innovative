@@ -20,7 +20,7 @@ const AboutUsComponent = () => {
                         </div>
                         <div className="col-sm-7">
                             <div className="about_home_2r clearfix">
-                                <p className="mgt" style={{ textAlign: "justify" }}>We are presenting service in Karnataka particularly inside the area of Bangalore, Tumkur, Kolar, Chitradurga.(BESCOM AND KPTCL regions). Our installation services are always done promptly and safely.We're proud to serve in numerous purposeful areas as follows.</p>
+                                <p className="mgt" style={{ textAlign: "justify" }}>We are currently providing our services in Karnataka, particularly in and around the locations of Bangalore, Tumkur, Kolar, Chitradurga (BESCOM AND KPTCL regions). Our installation services are always done promptly and safely.We're proud to serve in numerous purposeful areas as follows.</p>
                                 <ul>
                                     <li><i className="fa fa-check col_1"></i> HT-LT installation</li>
                                     <li><i className="fa fa-check col_1"></i> Wiring and installation/upgrades</li>
