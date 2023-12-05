@@ -15,6 +15,7 @@ import { GET_PROJECT_URL } from '../config';
 
 const Projects = () => {
   const [data, setData] = useState([])
+  const [isLoading, setLoading] = useState(true)
 
   const columns = useMemo(
     () => [
@@ -62,13 +63,28 @@ const Projects = () => {
     axios.get(GET_PROJECT_URL).then(res => {
       console.log(res.data)
       setData(res.data)
+      setLoading(false)
     }
-    ).catch(err => console.log(err))
+    ).catch(err => {
+      console.log(err)
+      setLoading(false)
+    })
   }, [])
   const table = useMaterialReactTable({
     columns,
     data,
     enableFullScreenToggle: false,
+    state:{ isLoading },
+
+    muiCircularProgressProps:{
+      color: 'primary',
+      thickness: 5,
+      size: 55,
+    },
+    muiSkeletonProps:{
+      animation: 'pulse',
+      height: 28,
+    }
 
 
   });
@@ -83,8 +99,11 @@ const Projects = () => {
 
       </div>
       <div className='mx-5 mb-5'>
-      
-        <MaterialReactTable table={table} />
+
+        <MaterialReactTable 
+        table={table} 
+       
+        />
 
       </div>
 

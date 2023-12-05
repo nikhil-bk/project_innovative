@@ -65,22 +65,22 @@ const Footer = () => {
                             <h6 className="text-uppercase fw-bold mb-4">
                                 Quick links
                             </h6>
-                           
+
                             <p>
-                                <Link to="/" className="text-reset link-item" onClick={()=>window.scrollTo(0, 0)}>Home</Link>
+                                <Link to="/" className="text-reset link-item" onClick={() => window.scrollTo(0, 0)}>Home</Link>
 
                             </p>
                             <p>
-                                <Link to="/services" className="text-reset link-item" onClick={()=>window.scrollTo(0, 0)}>Services</Link>
+                                <Link to="/services" className="text-reset link-item" onClick={() => window.scrollTo(0, 0)}>Services</Link>
                             </p>
                             <p>
-                                <Link to="/gallery" className="text-reset link-item" onClick={()=>window.scrollTo(0, 0)}>Gallery</Link>
+                                <Link to="/gallery" className="text-reset link-item" onClick={() => window.scrollTo(0, 0)}>Gallery</Link>
                             </p>
                             <p>
-                                <Link to="/projects" className="text-reset link-item" onClick={()=>window.scrollTo(0, 0)}>Projects</Link>
+                                <Link to="/projects" className="text-reset link-item" onClick={() => window.scrollTo(0, 0)}>Projects</Link>
                             </p>
                             <p>
-                                <Link to="/about-us" className="text-reset link-item" onClick={()=>window.scrollTo(0, 0)}>About US</Link>
+                                <Link to="/about-us" className="text-reset link-item" onClick={() => window.scrollTo(0, 0)}>About US</Link>
                             </p>
 
 
@@ -106,9 +106,12 @@ const Footer = () => {
 
 
 
-            <div className="text-center p-4" style={{ backgroundColor: "white", opacity: "0.5" }}>
+            <div className="text-center" style={{ backgroundColor: "white", opacity: "1" }}>
                 © {(new Date().getFullYear())} Copyright:
                 <a className="text-reset fw-bold" href="/">iesteam.in</a>
+            </div>
+            <div className='text-center' style={{ backgroundColor: "white" }}>
+                <i>Designed and Developed with <span className='col_1' style={{fontSize:"18px"}}>♥</span> by NIKHIL BK </i>
             </div>
 
         </footer>

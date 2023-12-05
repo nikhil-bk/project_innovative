@@ -70,6 +70,7 @@ const Admin = () => {
     const [data, setData] = useState([])
     const state = useContext(DataContext);
     const [isLogin] = state.isLogin;
+    const [isLoading, setLoading] = useState(true)
     const [projectDetails, setProjectDetails] = useState({
         "customer_name": "",
         "customer_address": "",
@@ -120,6 +121,7 @@ const Admin = () => {
         [],
     );
     const handleClick = () => {
+        setLoading(true)
         axios.post(INSERT_PROJECT_URL, projectDetails).then(res => {
             console.log(res.data)
             setData([...data, projectDetails])
@@ -132,9 +134,11 @@ const Admin = () => {
                 "divison": "",
                 "sub_divison": "",
             })
+            setLoading(false)
+
         }).catch(err => {
             console.log(err)
-
+            setLoading(false)
             setProjectDetails({
                 "customer_name": "",
                 "customer_address": "",
@@ -150,8 +154,12 @@ const Admin = () => {
         axios.get(GET_PROJECT_URL).then(res => {
             console.log(res.data)
             setData(res.data)
+            setLoading(false)
         }
-        ).catch(err => console.log(err))
+        ).catch(err => {
+            console.log(err)
+            setLoading(false)
+        })
     }, [])
 
     const handleExportRows = (rows) => {
@@ -171,6 +179,17 @@ const Admin = () => {
         columns,
         data,
         enableFullScreenToggle: false,
+        state: { isLoading },
+
+        muiCircularProgressProps: {
+            color: 'primary',
+            thickness: 5,
+            size: 55,
+        },
+        muiSkeletonProps: {
+            animation: 'pulse',
+            height: 28,
+        },
         renderTopToolbarCustomActions: ({ table }) => (
             <Box
                 sx={{

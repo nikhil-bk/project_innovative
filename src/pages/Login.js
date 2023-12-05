@@ -13,6 +13,7 @@ function Login() {
   const loadingRef = useRef(null)
   let navigate = useNavigate()
   const state = useContext(DataContext);
+  const [isLoading,setLoading]=useState(false)
   const [isLogin, setIsLogin] = state.isLogin;
 
   const [credentials, setCredentials] = useState({ email: "", password: "" })
@@ -28,17 +29,20 @@ function Login() {
     }
     else {
       // loadingRef.current.continuousStart();
+      setLoading(true)
       axios.post(LOGIN_URL, credentials)
         .then((res) => {
      
           localStorage.setItem('tokenStore', res.data.token);
           setIsLogin(true);
+          setLoading(false)
          
 
           navigate("/admin");
         }).catch(err => {
           alert("Incorrect email or password!")
           console.log(err)
+          setLoading(false)
           alert(err?.response?.data?.detail)
       
 
@@ -68,7 +72,10 @@ function Login() {
                   {/* <p className="card-subtitle text-muted">Powered by CosBE</p> */}
                   <br />
 
-                  <p className=" mb-3">Please enter your login and password</p>
+                  <p className=" mb-3"><span style={{color:'red'}}>Restricted Access</span>
+                  <br/>
+                  <span>Admin Only</span>
+                  </p>
                   <div className="mb-3">
                     <form>
                       <div className="mb-3 from-group">
@@ -96,11 +103,12 @@ function Login() {
                         <button
                           type="button"
                           className="btn fw-bold"
+                          disabled={isLoading}
                           style={{ backgroundColor: "#f47629", color: "white", }}
 
                           onClick={handleLoginSubmit}
                         >
-                          Login
+                         {isLoading?"Submitting":"Login"}
                         </button>
                       </div>
                     </form>
