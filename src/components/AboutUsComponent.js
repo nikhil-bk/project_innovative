@@ -9,7 +9,7 @@ const AboutUsComponent = () => {
                     <div className="about_home_1  clearfix">
                         <div className="col-sm-12">
                             <h1 className="mgt text-center">About <span className="col_1">Us</span></h1>
-                            <p className='text-justify'>Welcome to <span className='col_1 fw-bold'>Innovative Electrical Squad,</span> your one-stop destination for top-notch electrical contracting services. With a proven track record of excellence and a team of dedicated professionals, we are your reliable partner for all your electrical needs.</p>
+                            <p className='text-justify'>Welcome to <span className='col_1 fw-bold'>Innovative Electrical Support,</span> your one-stop destination for top-notch electrical contracting services. With a proven track record of excellence and a team of dedicated professionals, we are your reliable partner for all your electrical needs.</p>
                         </div>
                     </div>
                     <div className="about_home_2 clearfix row">

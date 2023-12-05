@@ -11,7 +11,7 @@ const AreaofExpertise = () => {
                     <div className="text-center clearfix">
                         <div className="col-sm-12">
                             <h1 className="mgt">Area of <span className="col_1">Expertise</span></h1>
-                            {/* <p>At <span className='col_1 fw-bold'>Innovative Electrical Squad</span>, we specialize in a wide range of electrical services, catering to residential, commercial, and industrial clients. With decades of experience in the field, our team of certified electricians is well-equipped to handle projects of any size and complexity.</p> */}
+                            {/* <p>At <span className='col_1 fw-bold'>Innovative Electrical Support</span>, we specialize in a wide range of electrical services, catering to residential, commercial, and industrial clients. With decades of experience in the field, our team of certified electricians is well-equipped to handle projects of any size and complexity.</p> */}
                         </div>
                         <div className='row clearfix'>
 
@@ -31,7 +31,7 @@ const AreaofExpertise = () => {
                                     <img src={CommercialService} className="card-img-top " alt="..." style={{ height: "250px" }} />
                                     <div className="card-body">
                                         <h5 className="card-title"><span className="col_1">Commercial Services</span></h5>
-                                        <p className="card-text" style={{ textAlign: "justify" }}>In the commercial sector, we understand the critical role that electrical systems play in the smooth operation of businesses. Innovative Electrical Squad offers a full suite of services, including electrical panel upgrades, energy-efficient lighting installations, and emergency backup systems. We work closely with businesses to ensure minimal disruption during installations or repairs, keeping your operations running smoothly.</p>
+                                        <p className="card-text" style={{ textAlign: "justify" }}>In the commercial sector, we understand the critical role that electrical systems play in the smooth operation of businesses. Innovative Electrical Support offers a full suite of services, including electrical panel upgrades, energy-efficient lighting installations, and emergency backup systems. We work closely with businesses to ensure minimal disruption during installations or repairs, keeping your operations running smoothly.</p>
                                     </div>
 
                                 </div>

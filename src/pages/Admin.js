@@ -14,6 +14,7 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import { mkConfig, generateCsv, download } from 'export-to-csv'
 import axios from 'axios';
 import { GET_PROJECT_URL, INSERT_PROJECT_URL } from '../config';
+import Login from '../pages/Login'
 
 // const data = [
 //     {
@@ -221,12 +222,12 @@ const Admin = () => {
 
     });
     return (
-        <div className='mt-5 bg-light'>
-            <div className="position-relative">
-                <img src={ProjectsHeroImage} alt="service" style={{ width: "100%", height: "50vh", filter: "brightness(60%)" }} />
+        <div className='mt-5 pt-4'>
+            {/* <div className="position-relative">
+                <img src={ProjectsHeroImage} alt="service" style={{ width: "100%", height: "30vh", filter: "brightness(60%)" }} />
                 <h5 className="position-absolute top-50 start-50 translate-middle text-center display-3 text-white fw-normal">ADMIN</h5>
-            </div>
-            <div className='container p-5'>
+            </div> */}
+            <div className='container mt-5'>
                 <h5 className='display-6 fw-normal text-center'>Admin <span className='col_1'>Operations</span></h5>
 
             </div>
@@ -281,10 +282,8 @@ const Admin = () => {
                 </div>
 
                 :
-                <div className='text-center mb-5'>
-                    <h2>Only admin can have accesss here</h2>
-                    <Link to="/">Back to home</Link>
-                </div>
+                <Login/>
+               
 
             }
             <Footer />

@@ -54,8 +54,8 @@ function Login() {
   return (
     <div >
       {/* <LoadingBar color="#0d6efd" ref={loadingRef} /> */}
-      <div className="container mt-5 p-5">
-        <div className="row mt-5 d-flex justify-content-center align-items-center">
+      <div className="container p-4">
+        <div className="row d-flex justify-content-center align-items-center">
           <div className="col col-lg-4 col-md-8 col-xs-12">
             <div className="" style={{ border: "2px solid #f47629" }}></div>
             <div className="card shadow">

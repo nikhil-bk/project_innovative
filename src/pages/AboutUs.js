@@ -25,7 +25,7 @@ const AboutUs = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">What We <span className='col_1'>Do</span></h5>
 
-                                    <p className="card-text" style={{ textAlign: "justify" }}>At Innovative Electrical Squad, we specialize in a wide range of electrical services, catering to residential, commercial, and industrial clients. With decades of experience in the field, our team of certified electricians is well-equipped to handle projects of any size and complexity.</p>
+                                    <p className="card-text" style={{ textAlign: "justify" }}>At Innovative Electrical Support, we specialize in a wide range of electrical services, catering to residential, commercial, and industrial clients. With decades of experience in the field, our team of certified electricians is well-equipped to handle projects of any size and complexity.</p>
 
                                 </div>
                             </div>
@@ -36,7 +36,7 @@ const AboutUs = () => {
                                 <div className="card-body ">
                                     <h5 className="card-title">Why We <span className='col_1'>Exists</span></h5>
 
-                                    <p className="card-text" style={{ textAlign: "justify" }}>At Innovative Electrical Squad, we believe in powering progress. We exist to make a difference in the electrical industry by providing innovative, sustainable, and high-quality solutions. Our passion for excellence drives us to constantly push boundaries and set new standards.</p>
+                                    <p className="card-text" style={{ textAlign: "justify" }}>At Innovative Electrical Support, we believe in powering progress. We exist to make a difference in the electrical industry by providing innovative, sustainable, and high-quality solutions. Our passion for excellence drives us to constantly push boundaries and set new standards.</p>
 
                                 </div>
                             </div>

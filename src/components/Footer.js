@@ -1,5 +1,6 @@
 import React from 'react'
-import Logo from "../images/SquadLogo.png"
+// import Logo from "../images/SquadLogo.png"
+import Logo from "../images/Logo3.png"
 import { Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
@@ -46,8 +47,8 @@ const Footer = () => {
                             <h6 className="text-uppercase fw-bold mb-4">
                                 <img
                                     src={Logo}
-                                    width="180"
-                                    height="60"
+                                    width="240"
+                                    height="80"
                                     className="d-inline-block align-top"
                                     alt="React Bootstrap logo"
                                 />

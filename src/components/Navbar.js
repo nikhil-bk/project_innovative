@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
-import Logo from "../images/SquadLogo.png"
+// import Logo from "../images/SquadLogo.png"
+import Logo from "../images/Logo3.png"
 import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -29,7 +30,7 @@ const NavbarComponent = () => {
         { name: "ABOUT US", link: "/about-us" },
         { name: "CONTACT", link: "/contact-us" },
         { name: "ADMIN", link: "/admin" },
-        { name: "LOGIN", link: "/login" }
+        { name: "LOGOUT", link: "/logout" }
 
     ]
     const handleLinkClick = (link) => {
@@ -48,8 +49,8 @@ const NavbarComponent = () => {
                     <Navbar.Brand href="/" >
                         <img
                             src={Logo}
-                            width="180"
-                            height="60"
+                            width="240"
+                            height="80"
                             className="d-inline-block align-top"
                             alt="React Bootstrap logo"
                         /></Navbar.Brand>
@@ -77,8 +78,8 @@ const NavbarComponent = () => {
                                     if (each.link === "/admin") {
                                         return isLogin ? <Link to={each.link} onClick={() => handleLinkClick(each.link)} className={`link-item ${pathname === each.link ? 'active-link' : ''} mx-2 fs-5 fw-bold `} style={{ textDecoration: "None" }} >{each.name}
                                         </Link> : ''
-                                    } else if (each.name === "LOGIN") {
-                                        return <Link to={isLogin ? "/" : "/login"} onClick={logOutSubmit} className={`link-item ${pathname === each.link ? 'active-link' : ''} mx-2 fs-5 fw-bold `} style={{ textDecoration: "None" }} >{isLogin ? "LOGOUT" : "LOGIN"}</Link>
+                                    } else if (each.name === "LOGOUT") {
+                                        return <Link to={isLogin ? "/" : "/login"} onClick={logOutSubmit} className={`link-item ${pathname === each.link ? 'active-link' : ''} mx-2 fs-5 fw-bold `} style={{ textDecoration: "None" }} >{isLogin ? "LOGOUT" : ""}</Link>
                                     }
                                     else {
                                         return <Link to={each.link} onClick={() => handleLinkClick(each.link)} className={`link-item ${pathname === each.link ? 'active-link' : ''} mx-2 fs-5 fw-bold `} style={{ textDecoration: "None" }} >{each.name}
