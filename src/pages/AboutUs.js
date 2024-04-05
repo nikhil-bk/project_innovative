@@ -91,7 +91,7 @@ const AboutUs = () => {
 
                 </div>
                 <h5 className='display-6 fw-normal text-center'>Our <span className='col_1'>Team</span></h5>
-                <div className='row clearfix'>
+                <div className='row clearfix justify-content-center'>
 
 
                     <div className='col-sm-3 my-2'>
@@ -142,7 +142,7 @@ const AboutUs = () => {
 
                         </div>
                     </div>
-                    <div className='col-sm-3 my-2'>
+                    {/* <div className='col-sm-3 my-2'>
                         <div className="card h-100 shadow-lg" style={{ width: "auto" }}>
                             <img src={Chandru} className="card-img-top p-3" alt="Chandru" style={{ height: "350px" }} />
                             <div className="card-body">
@@ -153,10 +153,10 @@ const AboutUs = () => {
                                 <li class="list-group-item"><i className="fa-solid fa-phone col_1"></i> 9876543210</li>
                                 <li class="list-group-item"><i className="fa-solid fa-envelope col_1"></i> abc@gmail.com</li>
 
-                            </ul> */}
+                            </ul> 
 
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <Footer />
